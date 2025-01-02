@@ -1,0 +1,39 @@
+@use "../../SASS/var" as var;
+
+.success {
+  min-height: 100vh;
+  background: var.$background2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  flex-direction: column;
+  .logo {
+    height: 120px;
+  }
+  .success-box {
+    width: 80%;
+    padding: 30px;
+    background-color: var.$background1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-direction: column;
+    border-radius: 20px;
+    .success-img {
+      height: 150px;
+    }
+    color: var.$background3;
+    .button {
+      outline: none;
+      border: none;
+      text-decoration: none;
+      color: #fff;
+      background-color: #697565;
+      padding: 10px 30px;
+      font-size: 16px;
+      border-radius: 20px;
+    }
+  }
+}

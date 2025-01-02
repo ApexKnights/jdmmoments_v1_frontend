@@ -1,0 +1,78 @@
+.admin-profile {
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+  h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+  }
+  .userinstructions {
+    width: 60%;
+    background-color: #636363;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #fff;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px #00000050;
+    position: relative;
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+    .mark {
+      position: absolute;
+      font-size: 250px;
+      bottom: 2%;
+      right: 1%;
+      color: #ffffff5b;
+    }
+    .update-password {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      input {
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+      }
+      button {
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+      }
+    }
+  }
+  .settings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    min-height: 500px;
+    border-radius: 20px;
+    background-color: #636363;
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+    @media (max-width: 350px) {
+      width: 100%;
+    }
+    h2 {
+      color: #fff;
+      padding: 20px 0px;
+    }
+  }
+}

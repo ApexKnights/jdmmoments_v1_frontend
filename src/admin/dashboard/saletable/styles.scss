@@ -1,0 +1,43 @@
+.table-sales {
+  width: 100%;
+  margin-top: 20px;
+  max-height: 400px;
+  overflow: auto;
+  tr {
+    text-align: center;
+    th {
+      padding: 12px 0px;
+      background-color: #697565;
+      color: #fff;
+    }
+    td {
+      padding: 12px 0px;
+      color: #fff;
+      img {
+        height: 30px;
+        width: 30px;
+      }
+      &:nth-child(even) {
+        background-color: #1e201e;
+      }
+    }
+  }
+}
+.search-sale {
+  margin-top: 10px;
+  margin-left: 10px;
+  input {
+    padding: 4px 6px;
+    outline: none;
+    border: none;
+    border-radius: 12px 0px 0px 12px;
+  }
+  button {
+    padding: 4px 6px;
+    outline: none;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    background-color: #697565;
+    color: #fff;
+  }
+}

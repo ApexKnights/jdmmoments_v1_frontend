@@ -1,0 +1,59 @@
+@use "../../SASS/var" as var;
+
+.diamond {
+  padding: 0px 60px;
+  min-height: 90vh;
+  @media (max-width: 768px) {
+    padding: 20px 20px;
+  }
+
+  .head {
+    color: #fff;
+    padding: 40px 0px;
+    font-size: 50px;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 35px;
+    }
+    @media (max-width: 425px) {
+      font-size: 25px;
+    }
+  }
+
+  .filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
+    justify-content: end;
+    position: relative;
+    p {
+      color: #fff;
+    }
+    .filter-icon {
+      color: #697565;
+    }
+  }
+  .cats {
+    padding: 30px 0px;
+    color: #fff;
+    .categories-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 10vh;
+      margin: 20px 0px;
+      border-radius: 20px;
+      h2 {
+        padding-left: 15px;
+      }
+    }
+    .product-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+  }
+}

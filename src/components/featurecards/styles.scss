@@ -1,0 +1,60 @@
+.feature-cards {
+  min-height: 400px;
+  max-height: 550px;
+  width: 300px;
+  @media (max-width: 768px) {
+    width: 60%;
+  }
+  @media (max-width: 450px) {
+    width: 80%;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+  .img-sec {
+    height: 250px;
+    width: 100%;
+    background-color: #fff;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content-sec {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    .titles {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+      h3 {
+        font-size: 30px;
+      }
+      span {
+        font-weight: bold;
+      }
+    }
+    .butts {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .button {
+        text-decoration: none;
+        padding: 8px 20px;
+        outline: none;
+        border: none;
+        color: #fff;
+        background-color: #222222;
+        border-radius: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.review-cards {
+  height: 65vh;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .r-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 23%;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px #000;
+    @media (max-width: 920px) {
+      width: 30%;
+    }
+    @media (max-width: 768px) {
+      width: 60%;
+    }
+    @media (max-width: 500px) {
+      width: 85%;
+    }
+
+    .qouted-rev {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      .quotes {
+        font-size: 24px;
+      }
+    }
+    .rates {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      .star {
+        font-size: 28px;
+      }
+    }
+  }
+}
+.give-rev {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  .rev-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    textarea {
+      width: 60%;
+      padding: 10px;
+      background-color: transparent;
+      border-radius: 20px;
+      color: #fff;
+      resize: none;
+      @media (max-width: 768px) {
+        width: 80%;
+      }
+    }
+
+    button {
+      background: #ecdfcc;
+      padding: 10px;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+    }
+  }
+}

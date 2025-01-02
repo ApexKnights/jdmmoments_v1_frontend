@@ -1,0 +1,83 @@
+@use "../../../SASS/var" as var;
+.sider {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 40px;
+  gap: 60px;
+  min-height: 90vh;
+  position: relative;
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+  @media (max-width: 425px) {
+    padding: 10px;
+  }
+  .cross {
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    top: 5%;
+    color: #fff;
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+    }
+  }
+  img {
+    height: 100px;
+    @media (max-width: 1024px) {
+      height: 50px;
+    }
+  }
+  .sider-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 20px;
+    .link {
+      display: flex;
+      align-items: center;
+      padding: 8px 10px;
+      gap: 6px;
+      color: #fff;
+      text-decoration: none;
+      width: 100%;
+      border-radius: 20px;
+      @media (max-width: 768px) {
+        padding: 10px 4px;
+      }
+      &:hover {
+        background-color: var.$background1;
+      }
+      span,
+      .ico {
+        font-size: 18px;
+        @media (max-width: 1024px) {
+          font-size: 13px;
+        }
+      }
+    }
+    .product-butt {
+      cursor: pointer;
+    }
+    .prods {
+      width: 100%;
+      padding: 10px 0px;
+    }
+  }
+  .logout {
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #e4a951;
+    color: #fff;
+    font-size: 17px;
+  }
+}

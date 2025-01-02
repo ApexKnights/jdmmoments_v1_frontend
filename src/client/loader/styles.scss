@@ -1,0 +1,13 @@
+.load-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e201e;
+  flex-direction: column;
+  gap: 30px;
+
+  img {
+    height: 180px;
+  }
+}

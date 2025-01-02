@@ -1,0 +1,95 @@
+.about {
+  min-height: 120vh;
+  .about-hero {
+    min-height: 70vh;
+    background: url("../../assets/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    h2 {
+      font-size: 18px;
+    }
+    h1 {
+      font-size: 60px;
+    }
+    span {
+      text-align: center;
+    }
+    .about-contact-button {
+      padding: 10px 20px;
+      outline: none;
+      border: none;
+      color: #fff;
+      border-radius: 20px;
+    }
+  }
+  .about-content {
+    min-height: 60vh;
+    padding: 30px 60px;
+    display: flex;
+    @media (max-width: 990px) {
+      padding: 30px 20px;
+    }
+    .left,
+    .right {
+      width: 50%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      color: #fff;
+      .tag {
+        color: #697565;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: 45px;
+        @media (max-width: 500px) {
+          font-size: 30px;
+        }
+      }
+      p {
+        width: 80%;
+        letter-spacing: 2px;
+      }
+      img {
+        height: 550px;
+        border-radius: 50%;
+        @media (max-width: 1330px) {
+          height: 500px;
+        }
+        @media (max-width: 1140px) {
+          height: 440px;
+        }
+        @media (max-width: 500px) {
+          height: 250px;
+        }
+      }
+    }
+
+    .right {
+      align-items: end;
+    }
+    @media (max-width: 960px) {
+      flex-direction: column-reverse;
+      gap: 40px;
+      .left,
+      .right {
+        align-items: center;
+        width: 100%;
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .pvkabout {
+      align-items: start;
+    }
+  }
+}

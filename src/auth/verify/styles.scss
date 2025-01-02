@@ -1,0 +1,49 @@
+@use "../../SASS/var" as var;
+
+.verify {
+  background: var.$background2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  color: var.$background3;
+  img {
+    height: 200px;
+  }
+  button {
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background: #697565;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .sent-msg {
+    color: rgb(57, 224, 57);
+  }
+  .sent-msg-error {
+    color: rgb(202, 73, 22);
+  }
+}
+
+.not-match {
+  background: var.$background2;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  color: rgb(201, 79, 79);
+  img {
+    height: 200px;
+  }
+  .bth {
+    color: #fff;
+    text-decoration: none;
+  }
+}

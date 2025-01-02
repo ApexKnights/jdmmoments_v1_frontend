@@ -1,0 +1,74 @@
+.dashboard {
+  padding: 0px 40px;
+  @media (max-width: 768px) {
+    padding: 0px 15px;
+  }
+  .second-section {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+    .sale-table {
+      width: 55%;
+      background-color: #868686;
+      max-height: 500px;
+      overflow: auto;
+      border-radius: 20px;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      h2 {
+        color: #fff;
+        text-align: center;
+        margin: 30px 0px;
+      }
+    }
+    .prod-chart {
+      width: 40%;
+      border-radius: 20px;
+      background-color: #868686;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      .pvk-chart,
+      .diamond-chart {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        h2 {
+          color: #fff;
+        }
+      }
+      .butts {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .chart-open-buttons {
+          padding: 10px 20px;
+          outline: none;
+          border: none;
+          border-radius: 20px;
+          background-color: #697565;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+      .chart {
+        width: 100%;
+      }
+    }
+  }
+}

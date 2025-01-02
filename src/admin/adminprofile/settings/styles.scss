@@ -1,0 +1,132 @@
+.web-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 0px;
+  .change-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    textarea {
+      width: 70%;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+    }
+    button {
+      outline: none;
+      border: none;
+      padding: 10px;
+      background-color: #ecdfcc;
+    }
+  }
+  .color-change {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    .color-box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .primary,
+      .secondary {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: #0000004f;
+        padding: 10px;
+        border-radius: 10px;
+        h3 {
+          color: #fff;
+        }
+        span {
+          padding: 20px;
+          background-color: #000000;
+          border-radius: 20px;
+          color: #fff;
+        }
+      }
+    }
+    button {
+      outline: none;
+      border: none;
+      padding: 10px;
+      background-color: #ecdfcc;
+    }
+  }
+
+  .logo-change,
+  .aboutimg-change,
+  .heroimg-change {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    width: 100%;
+    background-color: #00000077;
+    padding: 10px 0px;
+
+    button {
+      outline: none;
+      border: none;
+      padding: 10px;
+      background-color: #ecdfcc;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+  .aboutimg-change {
+    background-color: #301c1ca2;
+    input[type="file"] {
+      display: none;
+    }
+    .upload-about {
+      font-size: 12px;
+      border: 1px dashed #5c5c5c;
+      display: inline-block;
+      padding: 6px 12px;
+      color: #000;
+      cursor: pointer;
+      background-color: #ddd;
+    }
+    button {
+      background-color: #d8a14e;
+    }
+  }
+  .heroimg-change {
+    background-color: #000000;
+    input[type="file"] {
+      display: none;
+    }
+    .upload-hero {
+      font-size: 12px;
+      border: 1px dashed #5c5c5c;
+      display: inline-block;
+      padding: 6px 12px;
+      color: #000;
+      cursor: pointer;
+      background-color: #ddd;
+    }
+    button {
+      color: #fff;
+      background-color: #2f3a2f;
+    }
+  }
+}
