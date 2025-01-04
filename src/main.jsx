@@ -6,7 +6,7 @@ import { HashRouter } from "react-router-dom"
 import { ContextProvider } from './context/userContext.jsx'
 
 
-export const server = 'http://localhost:8000/jdm/api/v1'
+export const server = 'https://jdmmoments-v1-backend.onrender.com/jdm/api/v1'
 createRoot(document.getElementById('root')).render(
   <ContextProvider>
     <HashRouter>
